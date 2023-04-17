@@ -15,8 +15,8 @@ const Register = () => {
 
     return (
         <div className="hero min-h-screen bg-base-200">
-            <div className="hero-content flex-col md:flex-row-reverse">
-                <div className="text-center lg:text-left">
+            <div className="hero-content flex-col">
+                <div className="text-center">
                     <h1 className="text-5xl font-bold">Please Register !</h1>
 
                 </div>
@@ -40,7 +40,7 @@ const Register = () => {
                             </label>
                             <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                             <label className="label">
-                                <Link href="/login" className="label-text-alt link link-hover">Already have an account</Link>
+                                <Link to="/login" className="label-text-alt link link-hover">Already have an account</Link>
                             </label>
                         </div>
                         <div className="form-control mt-6">
