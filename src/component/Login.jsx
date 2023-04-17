@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from './Providers/AuthProviders';
+import { AuthContext } from '../Providers/AuthProviders';
 
 const Login = () => {
 
@@ -18,6 +18,7 @@ const Login = () => {
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
+                form.reset();
             })
             .catch(error => {
                 console.log(error)

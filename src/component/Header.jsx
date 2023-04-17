@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from './Providers/AuthProviders';
+import { AuthContext } from '../Providers/AuthProviders';
 
 const Header = () => {
 
@@ -17,6 +17,7 @@ const Header = () => {
             <div className="navbar bg-primary text-primary-content">
                 <a className="btn btn-ghost normal-case text-4xl">Auth</a>
                 <Link className="btn btn-ghost normal-case text-xl" to='/'>Home</Link>
+                <Link className="btn btn-ghost normal-case text-xl" to='/orders'>Orders</Link>
                 <Link className="btn btn-ghost normal-case text-xl" to='/login'>Login</Link>
                 <Link className="btn btn-ghost normal-case text-xl" to='/register'>Register</Link>
                 {
